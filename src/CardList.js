@@ -3,7 +3,8 @@ import Card from "./Card";
 import {robots} from './robots.js'
 
 
-const CardList = () => {
+const CardList = ({robots}) => {
+
     const cardComponent = robots.map((user, i )=> {
         return (
              <Card 

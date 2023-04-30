@@ -13,8 +13,6 @@ const SearchBox = ({searchfield,searchChange}) => {
               onChange={searchChange}
               
               />
-        
-
 
               
         </div>
