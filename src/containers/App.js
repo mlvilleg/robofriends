@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBox from './SearchBox'
-import CardList from "./CardList";
-import {robots} from './robots';
+import SearchBox from '../components/SearchBox'
+import CardList from "../components/CardList";
+
 import './App.css';
 
 
@@ -18,7 +18,7 @@ class App extends React.Component {
     componentDidMount(){
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json()
-            ).then(users => this.setState({robots:robots}))
+            ).then(users => this.setState({robots:users}))
 
 
        
